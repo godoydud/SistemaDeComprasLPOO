@@ -1,10 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author Godoy
- */
 public class Compra {
     private Funcionario funcionario;
     private Cliente cliente;

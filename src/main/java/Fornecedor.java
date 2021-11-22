@@ -1,11 +1,6 @@
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-/**
- *
- * @author Godoy
- */
 public class Fornecedor implements Verificavel {
     Scanner sc = new Scanner(System.in);
 

@@ -2,10 +2,6 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-/**
- *
- * @author Godoy
- */
 public abstract class Pessoa implements Verificavel {
 
     Scanner sc = new Scanner(System.in);

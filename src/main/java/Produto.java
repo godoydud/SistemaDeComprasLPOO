@@ -1,7 +1,3 @@
-/**
- *
- * @author Godoy
- */
 public class Produto implements Comparable<Produto>{
     private String nomeProduto;
     private float valor;

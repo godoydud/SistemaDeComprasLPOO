@@ -1,7 +1,3 @@
-/**
- *
- * @author Godoy
- */
 public class Endereco { 
     String rua, bairro, cidade, cep;
     int numero;
