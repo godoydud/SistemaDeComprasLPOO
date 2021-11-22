@@ -12,6 +12,13 @@ public class Main {
         String nome, cpf, celular, funcao;
         double salario;
 
+        Fornecedor forn1, forn2;
+        String razaoSocial, nomeFantasia, cnpj, celularForn;
+
+        Produto prod1, prod2, prod3, prod4, prod5, prod6, prod7, prod8, prod9, prod10;
+        String nomeProduto;
+        Float valor;
+
         //try{
 
             // // LEITURA DOS 6 ENDEREÇOS PADRAO
@@ -94,7 +101,7 @@ public class Main {
             // end6 = new Endereco(rua, num, bairro, cidade, cep);
 
 
-            // LEITURA DOS FUNCIONÁRIOS
+            // LEITURA DOS FUNCIONARIOS
             // Funcionário 1
             System.out.print("Digite o nome do funcionário: ");
             nome = sc.nextLine();
@@ -147,7 +154,6 @@ public class Main {
             funcao = sc.nextLine();
             func2 = new Funcionario(nome, cpf, endereco, celular, salario, funcao);
 
-
             // CLIENTES
             // Cliente 1
             System.out.print("Digite o nome do cliente: ");
@@ -156,7 +162,7 @@ public class Main {
             cpf = sc.nextLine();
             System.out.print("Digite a rua do cliente: ");
             rua = sc.nextLine();
-            System.out.print("Digite o número da residência cliente: ");
+            System.out.print("Digite o número da residência do cliente: ");
             num = sc.nextInt();
             sc.nextLine();
             System.out.print("Digite o bairro do cliente: ");
@@ -177,7 +183,7 @@ public class Main {
             cpf = sc.nextLine();
             System.out.print("Digite a rua do cliente: ");
             rua = sc.nextLine();
-            System.out.print("Digite o número da residência cliente: ");
+            System.out.print("Digite o número da residência do cliente: ");
             num = sc.nextInt();
             sc.nextLine();
             System.out.print("Digite o bairro do cliente: ");
@@ -191,6 +197,133 @@ public class Main {
             celular = sc.nextLine();
             c2 = new Cliente(nome, cpf, endereco, celular);
 
+            // FORNECEDORES
+            // Fornecedor 1
+            System.out.print("Digite a razão social: ");
+            razaoSocial = sc.nextLine();
+            System.out.print("Digite o nome fantasia: ");
+            nomeFantasia = sc.nextLine();
+            System.out.print("Digite o cnpj: ");
+            cnpj = sc.nextLine();
+            System.out.print("Digite a rua do fornecedor: ");
+            rua = sc.nextLine();
+            System.out.print("Digite o número da residência do fornecedor: ");
+            num = sc.nextInt();
+            sc.nextLine();
+            System.out.print("Digite o bairro do fornecedor: ");
+            bairro = sc.nextLine();
+            System.out.print("Digite a cidade do fornecedor: ");
+            cidade = sc.nextLine();
+            System.out.print("Digite o CEP do fornecedor: ");
+            cep = sc.nextLine();
+            endereco = new Endereco(rua, num, bairro, cidade, cep);
+            System.out.print("Digite o celular do fornecedor: ");
+            celularForn = sc.nextLine();
+            forn1 = new Fornecedor(razaoSocial, nomeFantasia, cnpj, endereco, celularForn);
+
+            // Fornecedor 2
+            System.out.print("Digite a razão social: ");
+            razaoSocial = sc.nextLine();
+            System.out.print("Digite o nome fantasia: ");
+            nomeFantasia = sc.nextLine();
+            System.out.print("Digite o cnpj: ");
+            cnpj = sc.nextLine();
+            System.out.print("Digite a rua do fornecedor: ");
+            rua = sc.nextLine();
+            System.out.print("Digite o número da residência do fornecedor: ");
+            num = sc.nextInt();
+            sc.nextLine();
+            System.out.print("Digite o bairro do fornecedor: ");
+            bairro = sc.nextLine();
+            System.out.print("Digite a cidade do fornecedor: ");
+            cidade = sc.nextLine();
+            System.out.print("Digite o CEP do fornecedor: ");
+            cep = sc.nextLine();
+            endereco = new Endereco(rua, num, bairro, cidade, cep);
+            System.out.print("Digite o celular do fornecedor: ");
+            celularForn = sc.nextLine();
+            forn2 = new Fornecedor(razaoSocial, nomeFantasia, cnpj, endereco, celularForn);
+
+            // PRODUTOS
+            // Produto 1
+            System.out.print("Digite o nome do produto: ");
+            nomeProduto = sc.nextLine();
+            System.out.print("Digite o valor do produto: ");
+            valor = sc.nextFloat();
+            sc.nextLine();
+            prod1 = new Produto(nomeProduto, valor, forn1);
+
+            // Produto 2
+            System.out.print("Digite o nome do produto: ");
+            nomeProduto = sc.nextLine();
+            System.out.print("Digite o valor do produto: ");
+            valor = sc.nextFloat();
+            sc.nextLine();
+            prod2 = new Produto(nomeProduto, valor, forn1);
+
+            // Produto 3
+            System.out.print("Digite o nome do produto: ");
+            nomeProduto = sc.nextLine();
+            System.out.print("Digite o valor do produto: ");
+            valor = sc.nextFloat();
+            sc.nextLine();
+            prod3 = new Produto(nomeProduto, valor, forn1);
+
+            // Produto 4
+            System.out.print("Digite o nome do produto: ");
+            nomeProduto = sc.nextLine();
+            System.out.print("Digite o valor do produto: ");
+            valor = sc.nextFloat();
+            sc.nextLine();
+            prod4 = new Produto(nomeProduto, valor, forn1);
+
+            // Produto 5
+            System.out.print("Digite o nome do produto: ");
+            nomeProduto = sc.nextLine();
+            System.out.print("Digite o valor do produto: ");
+            valor = sc.nextFloat();
+            sc.nextLine();
+            prod5 = new Produto(nomeProduto, valor, forn1);
+
+            // Produto 6
+            System.out.print("Digite o nome do produto: ");
+            nomeProduto = sc.nextLine();
+            System.out.print("Digite o valor do produto: ");
+            valor = sc.nextFloat();
+            sc.nextLine();
+            prod6 = new Produto(nomeProduto, valor, forn2);
+
+            // Produto 7
+            System.out.print("Digite o nome do produto: ");
+            nomeProduto = sc.nextLine();
+            System.out.print("Digite o valor do produto: ");
+            valor = sc.nextFloat();
+            sc.nextLine();
+            prod7 = new Produto(nomeProduto, valor, forn2);
+
+            // Produto 8
+            System.out.print("Digite o nome do produto: ");
+            nomeProduto = sc.nextLine();
+            System.out.print("Digite o valor do produto: ");
+            valor = sc.nextFloat();
+            sc.nextLine();
+            prod8 = new Produto(nomeProduto, valor, forn2);
+
+            // Produto 9
+            System.out.print("Digite o nome do produto: ");
+            nomeProduto = sc.nextLine();
+            System.out.print("Digite o valor do produto: ");
+            valor = sc.nextFloat();
+            sc.nextLine();
+            prod9 = new Produto(nomeProduto, valor, forn2);
+
+            // Produto 10
+            System.out.print("Digite o nome do produto: ");
+            nomeProduto = sc.nextLine();
+            System.out.print("Digite o valor do produto: ");
+            valor = sc.nextFloat();
+            sc.nextLine();
+            prod10 = new Produto(nomeProduto, valor, forn2);
         //}
 
 //    • Usar exceção para tratar entradas inválidas para os valores referente a produtos e salário do Funcionario.
