@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Collections;
 
 public class Compra {
     private Funcionario funcionario;
@@ -11,8 +12,8 @@ public class Compra {
         this.cliente = cliente;
     }
     
-    public void adicionaProduto(Produto produto){
-        this.produtos.add(produto);
+    public void adicionaProduto(Produto prod){
+        this.produtos.add(prod);
     }
     
     public void listarCompra(){
@@ -22,6 +23,17 @@ public class Compra {
 //        para o maior valor do produto
 //        Ao final mostrar o valor total da compra.
 //        O valor do Produto impresso deve possuir 2 casas decimais.
+        float soma = 0;
+
+        System.out.printf("Funcionário: %s, Cliente: %s\n", this.funcionario.getNome(), this.cliente.getNome());
+
+        Collections.sort(produtos);
+        System.out.printf("%-15s | %15s\n", "PRODUTO", "PREÇO");
+        for (Produto produto : produtos){
+            System.out.printf("%-15s | %15.2f\n", produto.getNomeProduto(), produto.getValor());
+            soma += produto.getValor();
+        }
+        System.out.printf("\nTotal: %.2f\n", soma);
     }
     
     

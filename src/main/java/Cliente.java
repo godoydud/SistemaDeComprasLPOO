@@ -1,11 +1,11 @@
 public class Cliente extends Pessoa {
 
-    public Cliente(String nome, String cpf, String celular, Endereco endereco) {
-        super(nome, cpf, celular, endereco);
+    public Cliente(String nome, String cpf, Endereco endereco, String celular) {
+        super(nome, cpf, endereco, celular);
     }
 
     @Override
     public String toString() {
-        return " " + getNome() + " " + getCpf() + " " + getCelular();
+        return getNome() + " " + getCpf() + " " + getCelular();
     }
 }

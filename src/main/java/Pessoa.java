@@ -1,4 +1,3 @@
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -8,19 +7,19 @@ public abstract class Pessoa implements Verificavel {
     private String nome, cpf, celular;
     private Endereco endereco;
 
-    public Pessoa(String nome, String cpf, String celular, Endereco endereco) {
+    public Pessoa(String nome, String cpf, Endereco endereco, String celular) {
         this.nome = nome;
         this.celular = celular;
         this.endereco = endereco;
+
         //validar cpf
-        this.cpf = cpf;
         boolean check;
         check = validar(cpf);
        
-        while (!check) {   
+        if (!check)  
             solicitarNovo();
-            check = validar(this.cpf);
-        }
+        else
+            this.cpf = cpf;
 
     }
 
@@ -94,12 +93,18 @@ public abstract class Pessoa implements Verificavel {
     @Override
     public void solicitarNovo() {
         // este método solicita um novo CPF, até que o valor do CPF informado esteja correto
+        String cpf;
+        boolean check;
+
         System.out.print("CPF inválido, insira um CPF válido: ");
-        this.cpf = sc.nextLine();
+        cpf = sc.nextLine();
+        check = validar(cpf);
 
+        if (!check)
+            solicitarNovo();
+        else
+            this.cpf = cpf;
     }
-
-    ;
 
     public String getNome() {
         return nome;

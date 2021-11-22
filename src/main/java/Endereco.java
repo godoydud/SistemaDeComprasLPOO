@@ -2,7 +2,7 @@ public class Endereco {
     String rua, bairro, cidade, cep;
     int numero;
 
-    public Endereco(String rua, String bairro, String cidade, String cep, int numero) {
+    public Endereco(String rua, int numero, String bairro, String cidade, String cep) {
         this.rua = rua;
         this.bairro = bairro;
         this.cidade = cidade;
@@ -10,7 +10,7 @@ public class Endereco {
         this.numero = numero;
     }
 
-    public Endereco(String rua, String bairro, String cidade, int numero) {
+    public Endereco(String rua, int numero, String bairro, String cidade) {
         this.rua = rua;
         this.bairro = bairro;
         this.cidade = cidade;

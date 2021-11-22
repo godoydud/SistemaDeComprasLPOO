@@ -1,7 +1,22 @@
 public class Produto implements Comparable<Produto>{
     private String nomeProduto;
-    private float valor;
+    private Float valor;
     private Fornecedor empresa;
+
+    public Produto(String nomeProduto, float valor, Fornecedor empresa) {
+        this.nomeProduto = nomeProduto;
+        this.valor = valor;
+        this.empresa = empresa;
+    }
+
+    public int compareTo(Produto produto){
+        return this.getValor().compareTo(produto.getValor());
+    }
+
+    @Override
+    public String toString() {
+        return this.nomeProduto + " " + this.valor;
+    }
 
     public String getNomeProduto() {
         return nomeProduto;
@@ -11,11 +26,11 @@ public class Produto implements Comparable<Produto>{
         this.nomeProduto = nomeProduto;
     }
 
-    public float getValor() {
+    public Float getValor() {
         return valor;
     }
 
-    public void setValor(float valor) {
+    public void setValor(Float valor) {
         this.valor = valor;
     }
 
@@ -26,25 +41,4 @@ public class Produto implements Comparable<Produto>{
     public void setEmpresa(Fornecedor empresa) {
         this.empresa = empresa;
     }
-
-    
-    public Produto(String nomeProduto, float valor, Fornecedor empresa) {
-        this.nomeProduto = nomeProduto;
-        this.valor = valor;
-        this.empresa = empresa;
-    }
-    
-   public int compareTo(Produto produto){
-       return (int) (this.getValor() - produto.getValor());
-   }
-
-    @Override
-    public String toString() {
-        return "Produto{" + "nomeProduto=" + nomeProduto + ", valor=" + valor + ", empresa=" + empresa + '}';
-    }
-    
-    
-    
-    
-    
 }

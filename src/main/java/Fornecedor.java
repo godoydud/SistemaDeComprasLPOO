@@ -7,7 +7,7 @@ public class Fornecedor implements Verificavel {
     private String razaoSocial, nomeFantasia, cnpj, celular;
     private Endereco endereco;
 
-    public Fornecedor(String razaoSocial, String nomeFantasia, String cnpj, String celular, Endereco endereco) {
+    public Fornecedor(String razaoSocial, String nomeFantasia, String cnpj, Endereco endereco, String celular) {
 
         // obs: no construtor deve-se validar o CNPJ antes de atribuir o valor do cnpj
         // Então é preciso chamar o método para validar(String codigo)
@@ -18,13 +18,14 @@ public class Fornecedor implements Verificavel {
         this.celular = celular;
         this.endereco = endereco;
 
-        this.cnpj = cnpj;
-        validar(cnpj);
-
-        while (validar(this.cnpj) != true) {
+        // Validar CNPJ
+        boolean check;
+        check = validar(cnpj);
+       
+        if (!check)  
             solicitarNovo();
-            validar(this.cnpj);
-        }
+        else
+            this.cnpj = cnpj;
     }
 
     @Override
@@ -112,9 +113,17 @@ public class Fornecedor implements Verificavel {
     @Override
     public void solicitarNovo() {
         // este método solicita um novo CNPJ, até que o valor do CNPJ informado esteja correto
+        String cnpj;
+        boolean check;
+
         System.out.print("CNPJ inválido, insira um CNPJ válido: ");
-        this.cnpj = sc.nextLine();
-        
+        cnpj = sc.nextLine();
+        check = validar(cnpj);
+
+        if (!check)
+            solicitarNovo();
+        else
+            this.cnpj = cnpj;
     }
 
 }
