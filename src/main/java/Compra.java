@@ -25,7 +25,7 @@ public class Compra {
 //        O valor do Produto impresso deve possuir 2 casas decimais.
         float soma = 0;
 
-        System.out.printf("Funcionário: %s, Cliente: %s\n", this.funcionario.getNome(), this.cliente.getNome());
+        System.out.printf("\nFuncionário: %s, Cliente: %s\n", this.funcionario.getNome(), this.cliente.getNome());
 
         Collections.sort(produtos);
         System.out.printf("%-15s | %15s\n", "PRODUTO", "PREÇO");

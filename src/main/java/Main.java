@@ -19,6 +19,8 @@ public class Main {
         String nomeProduto;
         Float valor;
 
+        Compra comp1, comp2;
+
         //try{
 
             // // LEITURA DOS 6 ENDEREÇOS PADRAO
@@ -324,6 +326,27 @@ public class Main {
             valor = sc.nextFloat();
             sc.nextLine();
             prod10 = new Produto(nomeProduto, valor, forn2);
+
+            // COMPRAS
+            // Compra 1
+            comp1 = new Compra(func1, c1);
+            comp1.adicionaProduto(prod1);
+            comp1.adicionaProduto(prod2);
+            comp1.adicionaProduto(prod3);
+            comp1.adicionaProduto(prod4);
+            comp1.adicionaProduto(prod5);
+            
+            // Compra 2
+            comp2 = new Compra(func2, c2);
+            comp2.adicionaProduto(prod6);
+            comp2.adicionaProduto(prod7);
+            comp2.adicionaProduto(prod8);
+            comp2.adicionaProduto(prod9);
+            comp2.adicionaProduto(prod10);
+
+            // SAIDA
+            comp1.listarCompra();
+            comp2.listarCompra();
         //}
 
 //    • Usar exceção para tratar entradas inválidas para os valores referente a produtos e salário do Funcionario.
