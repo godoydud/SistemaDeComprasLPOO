@@ -25,15 +25,17 @@ public class Compra {
 //        O valor do Produto impresso deve possuir 2 casas decimais.
         float soma = 0;
 
-        System.out.printf("\nFuncionário: %s, Cliente: %s\n", this.funcionario.getNome(), this.cliente.getNome());
+        System.out.printf("\nFuncionário: %s, Cliente: %s\n\n", this.funcionario.getNome(), this.cliente.getNome());
 
         Collections.sort(produtos);
-        System.out.printf("%-15s | %15s\n", "PRODUTO", "PREÇO");
+        System.out.printf("%-16s  %15s\n", "PRODUTO", "PREÇO");
+        System.out.println("___________________________________");
         for (Produto produto : produtos){
-            System.out.printf("%-15s | %15.2f\n", produto.getNomeProduto(), produto.getValor());
+            System.out.printf("|%-15s | %15.2f|\n", produto.getNomeProduto(), produto.getValor());
             soma += produto.getValor();
         }
-        System.out.printf("\nTotal: %.2f\n", soma);
+        System.out.println("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯");
+        System.out.printf("Total: %.2f\n\n", soma);
     }
     
     

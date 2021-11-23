@@ -126,4 +126,9 @@ public class Fornecedor implements Verificavel {
             this.cnpj = cnpj;
     }
 
+    @Override
+    public String toString() {
+        return "Nome Fantasia: " + this.nomeFantasia + ", CNPJ: " + this.cnpj + ", Telefone: " + this.celular;
+    }
+
 }

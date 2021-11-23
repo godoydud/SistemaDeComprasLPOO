@@ -96,7 +96,7 @@ public abstract class Pessoa implements Verificavel {
         String cpf;
         boolean check;
 
-        System.out.print("CPF inválido, insira um CPF válido: ");
+        System.out.printf("CPF de %s inválido, insira um CPF válido: ", this.getNome());
         cpf = sc.nextLine();
         check = validar(cpf);
 
