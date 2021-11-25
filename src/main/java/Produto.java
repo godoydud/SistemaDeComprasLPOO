@@ -15,7 +15,7 @@ public class Produto implements Comparable<Produto>{
 
     @Override
     public String toString() {
-        return "Nome: " + this.nomeProduto + ", Preço: R$" + this.valor;
+        return "Produto: " + this.nomeProduto + ", Preço: R$" + this.valor;
     }
 
     public String getNomeProduto() {

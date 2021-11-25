@@ -25,6 +25,7 @@ public class Main {
         
         // LEITURA DOS FUNCIONARIOS
         // Funcionário 1
+        System.out.println("\n--------Funcionário 1--------");
         System.out.print("Digite o nome do funcionário: ");
         nome = sc.nextLine();
         System.out.print("Digite o CPF do funcionário: ");
@@ -48,7 +49,7 @@ public class Main {
             salario = sc.nextDouble();
             sc.nextLine();
         } catch (InputMismatchException e){
-            System.out.println("Entrada inválida.\nDefinindo valor padrão (0)");
+            System.out.println("->Entrada inválida.\nDefinindo valor padrão (0)");
             salario = 0;
         }
         System.out.print("Digite a função do funcionário: ");
@@ -57,6 +58,7 @@ public class Main {
         System.out.println();
 
         // Funcionário 2
+        System.out.println("--------Funcionário 2--------");
         System.out.print("Digite o nome do funcionário: ");
         nome = sc.nextLine();
         System.out.print("Digite o CPF do funcionário: ");
@@ -80,7 +82,7 @@ public class Main {
             salario = sc.nextDouble();
             sc.nextLine();
         } catch (InputMismatchException e){
-            System.out.println("Entrada inválida.\nDefinindo valor padrão (0)");
+            System.out.println("->Entrada inválida.\nDefinindo valor padrão (0)");
             salario = 0;
         }
         System.out.print("Digite a função do funcionário: ");
@@ -90,6 +92,7 @@ public class Main {
 
         // CLIENTES
         // Cliente 1
+        System.out.println("----------Cliente 1----------");
         System.out.print("Digite o nome do cliente: ");
         nome = sc.nextLine();
         System.out.print("Digite o CPF do cliente: ");
@@ -112,6 +115,7 @@ public class Main {
         System.out.println();
 
         // Cliente 2
+        System.out.println("----------Cliente 2----------");
         System.out.print("Digite o nome do cliente: ");
         nome = sc.nextLine();
         System.out.print("Digite o CPF do cliente: ");
@@ -135,11 +139,12 @@ public class Main {
 
         // FORNECEDORES
         // Fornecedor 1
+        System.out.println("--------Fornecedor 1--------");
         System.out.print("Digite a razão social: ");
         razaoSocial = sc.nextLine();
         System.out.print("Digite o nome fantasia: ");
         nomeFantasia = sc.nextLine();
-        System.out.print("Digite o cnpj: ");
+        System.out.print("Digite o CNPJ: ");
         cnpj = sc.nextLine();
         System.out.print("Digite a rua do fornecedor: ");
         rua = sc.nextLine();
@@ -159,11 +164,12 @@ public class Main {
         System.out.println();
 
         // Fornecedor 2
+        System.out.println("--------Fornecedor 2--------");
         System.out.print("Digite a razão social: ");
         razaoSocial = sc.nextLine();
         System.out.print("Digite o nome fantasia: ");
         nomeFantasia = sc.nextLine();
-        System.out.print("Digite o cnpj: ");
+        System.out.print("Digite o CNPJ: ");
         cnpj = sc.nextLine();
         System.out.print("Digite a rua do fornecedor: ");
         rua = sc.nextLine();
@@ -184,6 +190,7 @@ public class Main {
 
         // PRODUTOS
         // Produto 1
+        System.out.println("---------Produto 1---------");
         System.out.print("Digite o nome do produto: ");
         nomeProduto = sc.nextLine();
         try{
@@ -192,12 +199,13 @@ public class Main {
             sc.nextLine();
             prod1 = new Produto(nomeProduto, valor, forn1);
         } catch (InputMismatchException e){
-            System.out.println("Entrada inválida.\nDefinindo valor padrão (0)");
+            System.out.println("->Entrada inválida.\nDefinindo valor padrão (0)");
             prod1 = new Produto(nomeProduto, 0, forn1);
         }
         System.out.println();
         
         // Produto 2
+        System.out.println("---------Produto 2---------");
         System.out.print("Digite o nome do produto: ");
         nomeProduto = sc.nextLine();
         try{
@@ -206,12 +214,13 @@ public class Main {
             sc.nextLine();
             prod2 = new Produto(nomeProduto, valor, forn1);
         } catch (InputMismatchException e) {
-            System.out.println("Entrada inválida.\nDefinindo valor padrão (0)");
+            System.out.println("->Entrada inválida.\nDefinindo valor padrão (0)");
             prod2 = new Produto(nomeProduto, 0, forn1);
         }
         System.out.println();
 
         // Produto 3
+        System.out.println("---------Produto 3---------");
         System.out.print("Digite o nome do produto: ");
         nomeProduto = sc.nextLine();
         try{
@@ -220,12 +229,13 @@ public class Main {
             sc.nextLine();
             prod3 = new Produto(nomeProduto, valor, forn1);
         } catch (InputMismatchException e) {
-            System.out.println("Entrada inválida.\nDefinindo valor padrão (0)");
+            System.out.println("->Entrada inválida.\nDefinindo valor padrão (0)");
             prod3 = new Produto(nomeProduto, 0, forn1);
         }
         System.out.println();
 
         // Produto 4
+        System.out.println("---------Produto 4---------");
         System.out.print("Digite o nome do produto: ");
         nomeProduto = sc.nextLine();
         try{
@@ -234,12 +244,13 @@ public class Main {
             sc.nextLine();
             prod4 = new Produto(nomeProduto, valor, forn1);
         } catch (InputMismatchException e) {
-            System.out.println("Entrada inválida.\nDefinindo valor padrão (0)");
+            System.out.println("->Entrada inválida.\nDefinindo valor padrão (0)");
             prod4 = new Produto(nomeProduto, 0, forn1);
         }
         System.out.println();
 
         // Produto 5
+        System.out.println("---------Produto 5---------");
         System.out.print("Digite o nome do produto: ");
         nomeProduto = sc.nextLine();
         try{
@@ -248,13 +259,14 @@ public class Main {
             sc.nextLine();
             prod5 = new Produto(nomeProduto, valor, forn1);
         } catch (InputMismatchException e){
-            System.out.println("Entrada inválida.\nDefinindo valor padrão (0)");
+            System.out.println("->Entrada inválida.\nDefinindo valor padrão (0)");
             prod5 = new Produto(nomeProduto, 0, forn1);
 
         }
         System.out.println();
 
         // Produto 6
+        System.out.println("---------Produto 6---------");
         System.out.print("Digite o nome do produto: ");
         nomeProduto = sc.nextLine();
         try{
@@ -263,13 +275,14 @@ public class Main {
             sc.nextLine();
             prod6 = new Produto(nomeProduto, valor, forn2);
         } catch (InputMismatchException e){
-            System.out.println("Entrada inválida.\nDefinindo valor padrão (0)");
+            System.out.println("->Entrada inválida.\nDefinindo valor padrão (0)");
             prod6 = new Produto(nomeProduto, 0, forn2);
 
         }
         System.out.println();
 
         // Produto 7
+        System.out.println("---------Produto 7---------");
         System.out.print("Digite o nome do produto: ");
         nomeProduto = sc.nextLine();
         try{
@@ -278,12 +291,13 @@ public class Main {
             sc.nextLine();
             prod7 = new Produto(nomeProduto, valor, forn2);
         } catch (InputMismatchException e){
-            System.out.println("Entrada inválida.\nDefinindo valor padrão (0)");
+            System.out.println("->Entrada inválida.\nDefinindo valor padrão (0)");
             prod7 = new Produto(nomeProduto, 0, forn2);
         }
         System.out.println();
 
         // Produto 8
+        System.out.println("---------Produto 8---------");
         System.out.print("Digite o nome do produto: ");
         nomeProduto = sc.nextLine();
         try {
@@ -292,12 +306,13 @@ public class Main {
             sc.nextLine();
             prod8 = new Produto(nomeProduto, valor, forn2);
         } catch (InputMismatchException e){
-            System.out.println("Entrada inválida.\nDefinindo valor padrão (0)");
+            System.out.println("->Entrada inválida.\nDefinindo valor padrão (0)");
             prod8 = new Produto(nomeProduto, 0, forn2);
         }
         System.out.println();
 
         // Produto 9
+        System.out.println("---------Produto 9---------");
         System.out.print("Digite o nome do produto: ");
         nomeProduto = sc.nextLine();
         try{
@@ -306,12 +321,13 @@ public class Main {
             sc.nextLine();
             prod9 = new Produto(nomeProduto, valor, forn2);
         } catch (InputMismatchException e){
-            System.out.println("Entrada inválida.\nDefinindo valor padrão (0)");
+            System.out.println("->Entrada inválida.\nDefinindo valor padrão (0)");
             prod9 = new Produto(nomeProduto, 0, forn2);
         }
         System.out.println();
 
         // Produto 10
+        System.out.println("---------Produto 10---------");
         System.out.print("Digite o nome do produto: ");
         nomeProduto = sc.nextLine();
         try{
@@ -320,10 +336,11 @@ public class Main {
             sc.nextLine();
             prod10 = new Produto(nomeProduto, valor, forn2);
         } catch (InputMismatchException e){
-            System.out.println("Entrada inválida.\nDefinindo valor padrão (0)");
+            System.out.println("->Entrada inválida.\nDefinindo valor padrão (0)");
             prod10 = new Produto(nomeProduto, 0, forn2);
         }
         System.out.println();
+        sc.close();
 
         // COMPRAS
         // Compra 1
@@ -344,46 +361,51 @@ public class Main {
 
         // SAIDA
         // Funcionários
+        System.out.println("->FUNCIONARIOS:");
         System.out.println(func1.toString());
         System.out.println();
         System.out.println(func2.toString());
         System.out.println();
 
         // Clientes
+        System.out.println("->CLIENTES:");
         System.out.println(c1.toString());
         System.out.println();
         System.out.println(c2.toString());
         System.out.println();
 
         // Fornecedores
+        System.out.println("->FORNECEDORES:");
         System.out.println(forn1.toString());
         System.out.println();
         System.out.println(forn2.toString());
         System.out.println();
 
         // Produtos
+        System.out.println("->PRODUTOS:");
         System.out.println(prod1.toString());
-        System.out.println();
+        System.out.println("-------");
         System.out.println(prod2.toString());
-        System.out.println();
+        System.out.println("-------");
         System.out.println(prod3.toString());
-        System.out.println();
+        System.out.println("-------");
         System.out.println(prod4.toString());
-        System.out.println();
+        System.out.println("-------");
         System.out.println(prod5.toString());
-        System.out.println();
+        System.out.println("-------");
         System.out.println(prod6.toString());
-        System.out.println();
+        System.out.println("-------");
         System.out.println(prod7.toString());
-        System.out.println();
+        System.out.println("-------");
         System.out.println(prod8.toString());
-        System.out.println();
+        System.out.println("-------");
         System.out.println(prod9.toString());
-        System.out.println();
+        System.out.println("-------");
         System.out.println(prod10.toString());
         System.out.println();
 
         // Saída compras
+        System.out.println("->COMPRAS:");
         comp1.listarCompra();
         comp2.listarCompra();
     }

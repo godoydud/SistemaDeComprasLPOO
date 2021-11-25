@@ -128,7 +128,7 @@ public class Fornecedor implements Verificavel {
 
     @Override
     public String toString() {
-        return "Nome Fantasia: " + this.nomeFantasia + ", CNPJ: " + this.cnpj + ", Telefone: " + this.celular;
+        return "Nome Fantasia: " + this.nomeFantasia + "\nCNPJ: " + this.cnpj + "\nTelefone: " + this.celular;
     }
 
 }
