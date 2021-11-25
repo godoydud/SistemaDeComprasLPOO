@@ -90,7 +90,7 @@ public class Main {
         func2 = new Funcionario(nome, cpf, endereco, celular, salario, funcao);
         System.out.println();
 
-        // CLIENTES
+        // LEITURA DOS CLIENTES
         // Cliente 1
         System.out.println("----------Cliente 1----------");
         System.out.print("Digite o nome do cliente: ");
@@ -137,7 +137,7 @@ public class Main {
         c2 = new Cliente(nome, cpf, endereco, celular);
         System.out.println();
 
-        // FORNECEDORES
+        // LEITURA DOS FORNECEDORES
         // Fornecedor 1
         System.out.println("--------Fornecedor 1--------");
         System.out.print("Digite a razão social: ");
@@ -188,7 +188,7 @@ public class Main {
         forn2 = new Fornecedor(razaoSocial, nomeFantasia, cnpj, endereco, celularForn);
         System.out.println();
 
-        // PRODUTOS
+        // LEITURA DOS PRODUTOS
         // Produto 1
         System.out.println("---------Produto 1---------");
         System.out.print("Digite o nome do produto: ");
@@ -342,7 +342,7 @@ public class Main {
         System.out.println();
         sc.close();
 
-        // COMPRAS
+        // ADIÇÃO DAS COMPRAS
         // Compra 1
         comp1 = new Compra(func1, c1);
         comp1.adicionaProduto(prod1);
@@ -359,7 +359,7 @@ public class Main {
         comp2.adicionaProduto(prod9);
         comp2.adicionaProduto(prod10);
 
-        // SAIDA
+        // SAÍDA
         // Funcionários
         System.out.println("->FUNCIONARIOS:");
         System.out.println(func1.toString());

@@ -4,21 +4,20 @@ import java.util.Scanner;
 public class Fornecedor implements Verificavel {
     Scanner sc = new Scanner(System.in);
 
+    // Atributos
     private String razaoSocial, nomeFantasia, cnpj, celular;
     private Endereco endereco;
 
+    // Construtor
     public Fornecedor(String razaoSocial, String nomeFantasia, String cnpj, Endereco endereco, String celular) {
 
-        // obs: no construtor deve-se validar o CNPJ antes de atribuir o valor do cnpj
-        // Então é preciso chamar o método para validar(String codigo)
-        // Se o CNPJ estiver correto, ele será atribuído,
-        // Caso contrário deverá solicitar um novo valor para o cnpj
         this.razaoSocial = razaoSocial;
         this.nomeFantasia = nomeFantasia;
         this.celular = celular;
         this.endereco = endereco;
 
         // Validar CNPJ
+        // CNPJ só será atribuído quando for válido.
         boolean check;
         check = validar(cnpj);
        
@@ -28,6 +27,7 @@ public class Fornecedor implements Verificavel {
             this.cnpj = cnpj;
     }
 
+    // Método para validar o CNPJ
     @Override
     public boolean validar(String cnpj) {
         // Substituição dos caracteres especiais por uma concatenação
@@ -110,6 +110,7 @@ public class Fornecedor implements Verificavel {
         }
     }
 
+    // Método que solicita um novo CNPJ até que o valor inserido seja válido.
     @Override
     public void solicitarNovo() {
         // este método solicita um novo CNPJ, até que o valor do CNPJ informado esteja correto
@@ -126,6 +127,7 @@ public class Fornecedor implements Verificavel {
             this.cnpj = cnpj;
     }
 
+    // Método para printar
     @Override
     public String toString() {
         return "Nome Fantasia: " + this.nomeFantasia + "\nCNPJ: " + this.cnpj + "\nTelefone: " + this.celular;

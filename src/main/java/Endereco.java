@@ -1,7 +1,9 @@
-public class Endereco { 
-    String rua, bairro, cidade, cep;
-    int numero;
+public class Endereco {
+    // Atributos
+    private String rua, bairro, cidade, cep;
+    private int numero;
 
+    // Construtor com CEP
     public Endereco(String rua, int numero, String bairro, String cidade, String cep) {
         this.rua = rua;
         this.bairro = bairro;
@@ -10,6 +12,7 @@ public class Endereco {
         this.numero = numero;
     }
 
+    // Construtor sem CEP
     public Endereco(String rua, int numero, String bairro, String cidade) {
         this.rua = rua;
         this.bairro = bairro;
@@ -17,6 +20,7 @@ public class Endereco {
         this.numero = numero;
     }
 
+    // Getters e Setters
     public String getRua() {
         return rua;
     }

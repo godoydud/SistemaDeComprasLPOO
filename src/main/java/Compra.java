@@ -3,26 +3,24 @@ import java.util.List;
 import java.util.Collections;
 
 public class Compra {
+    // Atributos
     private Funcionario funcionario;
     private Cliente cliente;
     private ArrayList<Produto> produtos = new ArrayList<>();
     
+    // Construtor
     public Compra(Funcionario funcionario, Cliente cliente) {
         this.funcionario = funcionario;
         this.cliente = cliente;
     }
     
+    // Método para adicionar produtos à uma compra
     public void adicionaProduto(Produto prod){
         this.produtos.add(prod);
     }
     
+    // Método para printar os produtos de uma compra ordenados a partir do produto com menor valor.
     public void listarCompra(){
-//        O método listar compra deverá informar o Funcionário que fez a venda e o cliente que
-//        fez a compra
-//        Em seguida, deverá listar todos os produtos comprados pelo cliente ordenado do menor
-//        para o maior valor do produto
-//        Ao final mostrar o valor total da compra.
-//        O valor do Produto impresso deve possuir 2 casas decimais.
         float soma = 0;
 
         System.out.printf("\nFuncionário: %s \nCliente: %s\n", this.funcionario.getNome(), this.cliente.getNome());
@@ -37,6 +35,4 @@ public class Compra {
         System.out.println("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯");
         System.out.printf("Total: %.2f\n\n", soma);
     }
-    
-    
 }

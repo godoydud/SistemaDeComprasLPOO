@@ -2,17 +2,20 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public abstract class Pessoa implements Verificavel {
-
     Scanner sc = new Scanner(System.in);
+
+    // Atributos
     private String nome, cpf, celular;
     private Endereco endereco;
 
+    // Construtor
     public Pessoa(String nome, String cpf, Endereco endereco, String celular) {
         this.nome = nome;
         this.celular = celular;
         this.endereco = endereco;
 
-        //validar cpf
+        // Validar CPF
+        // Só será atribuído caso o CPF seja válido.
         boolean check;
         check = validar(cpf);
        
@@ -23,7 +26,7 @@ public abstract class Pessoa implements Verificavel {
 
     }
 
-
+    // Método para validar o CPF
     @Override
     public boolean validar(String cpf) {
         // este método terá que validar o CPF
@@ -90,9 +93,9 @@ public abstract class Pessoa implements Verificavel {
         }
     }
 
+    // Método que solicita um novo CPF até que o valor inserido seja válido.
     @Override
     public void solicitarNovo() {
-        // este método solicita um novo CPF, até que o valor do CPF informado esteja correto
         String cpf;
         boolean check;
 
@@ -106,6 +109,7 @@ public abstract class Pessoa implements Verificavel {
             this.cpf = cpf;
     }
 
+    // Getters e Setters
     public String getNome() {
         return nome;
     }
