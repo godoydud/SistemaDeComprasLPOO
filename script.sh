@@ -5,7 +5,7 @@
 # java Main
 
 # Nome func
-echo 'Thiago'
+echo 'Thiago Lütz'
 # CPF func
 echo '10213293986'
 # Rua func
@@ -17,20 +17,20 @@ echo 'Centro'
 # Cidade func
 echo 'Santa Maria'
 # CEP func
-echo '123456789'
+echo '97010200'
 # Num celular func
-echo '62982150642'
+echo '(62) 98215-0642'
 # Salario func
 echo '100000'
 # Funcao func
 echo 'CEO'
 
 # Nome func
-echo 'Vitor'
+echo 'Vítor Oliveira'
 # CPF func
 echo '70376288167'
 # Rua func
-echo 'Tonico Luciano'
+echo 'Tônico Luciano'
 # Num casa func
 echo '1504'
 # Bairro func
@@ -38,85 +38,85 @@ echo 'Nossa Senhora de Fátima'
 # Cidade func
 echo 'Mineiros'
 # CEP func
-echo '123456789'
+echo '75832096'
 # Num celular func
-echo '64999522359'
+echo '(64) 99952-2359'
 # Salario func
-echo '1'
+echo '5000'
 # Funcao func
-echo 'escravo'
+echo 'Vendedor'
 
 # Nome cli
-echo 'Everton'
+echo 'Tommy Shelby'
 # CPF cli
-echo '04653302154'
+echo '67425517043'
 # Rua cli
-echo 'Barueri'
+echo 'Machadinha'
 # Num casa cli
-echo '385'
+echo '212'
 # Bairro cli
-echo 'Moreninha 2'
+echo 'Gypsy'
 # Cidade cli
-echo 'Campo Grande'
+echo 'Birmingham'
 # CEP cli
-echo '123456789'
+echo '72927012'
 # Num celular cli
-echo '67994612345'
+echo '(67) 99461-2345'
 
 # Nome cli
-echo 'Godoy'
+echo 'Eduardo Godoy'
 # CPF cli
-echo '04653302154'
+echo '64292104050'
 # Rua cli
-echo 'casa godoy'
+echo 'Rua das Palmeiras'
 # Num casa cli
-echo '3000'
+echo '007'
 # Bairro cli
-echo 'nao sei'
+echo 'Belo Jardim II'
 # Cidade cli
-echo 'Campo Grande'
+echo 'Rio Branco'
 # CEP cli
-echo '123456789'
+echo '69908076'
 # Num celular cli
-echo '67994612345'
+echo '(11) 99906-4946'
 
 # Razão social forn
 echo 'Empresa 1'
 # Nome fantasia forn
-echo 'Uno empresita'
+echo 'Mix Lavanderia'
 # CNPJ forn
 echo '56352577000117'
 # Rua forn
-echo 'rua empresa 1'
+echo 'Rua Projetada A3 JP'
 # Num casa forn
-echo '123'
+echo '1734'
 # Bairro forn
-echo 'bairro empresa 1'
+echo 'Jardim das Primaveras'
 # Cidade forn
-echo 'cidade empresa 1'
+echo 'Dourados'
 # CEP forn
-echo '123456789'
+echo '79822505'
 # Num celular forn
-echo '62123456789'
+echo '(37) 99906-4946'
 
 # Razão social forn
 echo 'Empresa 2'
 # Nome fantasia forn
-echo 'Duo empresita'
+echo 'Volupia'
 # CNPJ forn
 echo '47595692000121'
 # Rua forn
-echo 'rua empresa 2'
+echo 'Travessa Pilates'
 # Num casa forn
-echo '321'
+echo '157'
 # Bairro forn
-echo 'bairro empresa 2'
+echo 'Isaura Parente'
 # Cidade forn
-echo 'cidade empresa 2'
+echo 'Rio Branco'
 # CEP forn
-echo '123456789'
+echo '69918258'
 # Num celular forn
-echo '62123456789'
+echo '(21) 97548 9953'
 
 # Nome produto
 echo 'Produto 1'
