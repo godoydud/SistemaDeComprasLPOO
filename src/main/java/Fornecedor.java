@@ -117,7 +117,7 @@ public class Fornecedor implements Verificavel {
         String cnpj;
         boolean check;
 
-        System.out.print("CNPJ inválido, insira um CNPJ válido: ");
+        System.out.print("->CNPJ inválido, insira um CNPJ válido: ");
         cnpj = sc.nextLine();
         check = validar(cnpj);
 
